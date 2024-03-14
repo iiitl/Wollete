@@ -579,6 +579,9 @@ export default function Navbar() {
             {resourcesList[2]}
           </Link>
         </div>
+        <div className="mx-4 my-4 ">
+          <Login />
+        </div>
       </div>
     </>
   )
