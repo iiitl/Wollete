@@ -1,0 +1,64 @@
+[
+  {
+    "code": "BRACKNELL",
+    "version": "1682271767702470656",
+    "longName": "Bracknell",
+    "shortName": "Bracknell",
+    "administrativeAreaCode": "BERKSHIRE",
+    "countryCode": "GB",
+    "geoLocation": {
+      "latitude": {
+        "degrees": 51,
+        "minutes": 24,
+        "seconds": 51.12,
+        "direction": "N",
+        "decimalDegrees": 51.4142
+      },
+      "longitude": {
+        "degrees": 0,
+        "minutes": 45,
+        "seconds": 9,
+        "direction": "W",
+        "decimalDegrees": -0.7525
+      },
+      "abbreviation": {
+        "lat": 51.4142,
+        "lon": -0.7525
+      }
+    },
+    "createdDateTime": "2023-04-23T17:42:47.668969Z",
+    "persistedDateTime": "2023-04-23T17:42:47.669063Z",
+    "id": "GB-BERKSHIRE-BRACKNELL"
+  },
+  {
+    "code": "WOKINGHAM",
+    "version": "1678745632821411840",
+    "longName": "Wokingham",
+    "shortName": "Wokingham",
+    "administrativeAreaCode": "BERKSHIRE",
+    "countryCode": "GB",
+    "geoLocation": {
+      "latitude": {
+        "degrees": 51,
+        "minutes": 24,
+        "seconds": 37.8,
+        "direction": "N",
+        "decimalDegrees": 51.4105
+      },
+      "longitude": {
+        "degrees": 0,
+        "minutes": 50,
+        "seconds": 2.04,
+        "direction": "W",
+        "decimalDegrees": -0.8339000000000001
+      },
+      "abbreviation": {
+        "lat": 51.4105,
+        "lon": -0.8339000000000001
+      }
+    },
+    "createdDateTime": "2023-03-13T22:12:40.566707Z",
+    "persistedDateTime": "2023-03-13T22:12:40.567088Z",
+    "id": "GB-BERKSHIRE-WOKINGHAM"
+  }
+]

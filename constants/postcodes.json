@@ -1,0 +1,122 @@
+[
+  {
+    "version": "1682272129965817856",
+    "postCode": "RG12 9TZ",
+    "countryCode": "GB",
+    "createdDateTime": "2023-04-23T17:48:49.930398Z",
+    "persistedDateTime": "2023-04-23T17:48:49.931290Z",
+    "entries": [
+      {
+        "id": "8B2EE49C-3B00-4891-A34A-F3B88EAA04F4",
+        "townCode": "BRACKNELL",
+        "firstLine": "Whitton Rd",
+        "postCodeId": "GB-RG12 9TZ",
+        "secondLine": "Winkfield Row",
+        "fullAddress": "Whitton Rd, Winkfield Row, Bracknell RG12 9TZ",
+        "countryCode": "GB",
+        "geoLocation": {
+          "latitude": {
+            "degrees": 51.0,
+            "minutes": 24.0,
+            "seconds": 31.61,
+            "direction": "N",
+            "decimalDegrees": 51.40878055555555
+          },
+          "longitude": {
+            "degrees": 0.0,
+            "minutes": 43.0,
+            "seconds": 39.03,
+            "direction": "W",
+            "decimalDegrees": -0.7275083333333333
+          },
+          "abbreviation": {
+            "lat": 51.40878055555555,
+            "lon": -0.7275083333333333
+          }
+        },
+        "administrativeAreaCode": "BERKSHIRE"
+      }
+    ],
+    "id": "GB-RG12 9TZ"
+  },
+  {
+    "version": "1678749750081224704",
+    "postCode": "RG40 2NS",
+    "countryCode": "GB",
+    "createdDateTime": "2023-03-13T22:19:10.888812Z",
+    "persistedDateTime": "2023-03-13T22:19:10.895159Z",
+    "entries": [
+      {
+        "id": "70DF2A19-D21E-489B-8703-80C0E11D3EF8",
+        "townCode": "WOKINGHAM",
+        "firstLine": "78 Finchampstead Rd",
+        "postCodeId": "GB-RG40 2NS",
+        "secondLine": null,
+        "fullAddress": "78 Finchampstead Rd, Wokingham RG40 2NS",
+        "countryCode": "GB",
+        "geoLocation": {
+          "latitude": {
+            "degrees": 51.0,
+            "minutes": 24.0,
+            "seconds": 13.0032,
+            "direction": "N",
+            "decimalDegrees": 51.403611999999995
+          },
+          "longitude": {
+            "degrees": 0.0,
+            "minutes": 50.0,
+            "seconds": 25.1448,
+            "direction": "W",
+            "decimalDegrees": -0.840318
+          },
+          "abbreviation": {
+            "lat": 51.403611999999995,
+            "lon": -0.840318
+          }
+        },
+        "administrativeAreaCode": "BERKSHIRE"
+      }
+    ],
+    "id": "GB-RG40 2NS"
+  },
+  {
+    "version": "1678750006102917120",
+    "postCode": "RG40 5AR",
+    "countryCode": "GB",
+    "createdDateTime": "2023-03-13T22:23:21.020075Z",
+    "persistedDateTime": "2023-03-13T22:23:21.020348Z",
+    "entries": [
+      {
+        "id": "44F774C4-4880-4681-BA63-3F32C2F01FCB",
+        "townCode": "WOKINGHAM",
+        "firstLine": "4 Barford Drive",
+        "postCodeId": "GB-RG40 5AR",
+        "secondLine": null,
+        "fullAddress": "4 Barford Drive, Wokingham RG40 5AR",
+        "countryCode": "GB",
+        "geoLocation": {
+          "latitude": {
+            "degrees": 51.0,
+            "minutes": 25.0,
+            "seconds": 21.4356,
+            "direction": "N",
+            "decimalDegrees": 51.422621
+          },
+          "longitude": {
+            "degrees": 0.0,
+            "minutes": 49.0,
+            "seconds": 15.078,
+            "direction": "W",
+            "decimalDegrees": -0.820855
+          },
+          "abbreviation": {
+            "lat": 51.422621,
+            "lon": -0.820855
+          }
+        },
+        "administrativeAreaCode": "BERKSHIRE"
+      }
+    ],
+    "id": "GB-RG40 5AR"
+  }
+]

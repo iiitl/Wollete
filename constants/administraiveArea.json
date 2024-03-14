@@ -1,0 +1,32 @@
+[
+  {
+    "code": "BERKSHIRE",
+    "version": "1678744185109479424",
+    "longName": "Royal Borough of Berkshire",
+    "shortName": "Berkshire",
+    "countryCode": "GB",
+    "geoLocation": {
+      "latitude": {
+        "degrees": 51,
+        "minutes": 28,
+        "seconds": 1.2,
+        "direction": "N",
+        "decimalDegrees": 51.467
+      },
+      "longitude": {
+        "degrees": 1,
+        "minutes": 11,
+        "seconds": 7.44,
+        "direction": "W",
+        "decimalDegrees": -1.1854
+      },
+      "abbreviation": {
+        "lat": 51.467,
+        "lon": -1.1854
+      }
+    },
+    "createdDateTime": "2023-03-13T21:49:45.043260Z",
+    "persistedDateTime": "2023-03-13T21:49:45.043526Z",
+    "id": "GB-BERKSHIRE"
+  }
+]

@@ -1,0 +1,27 @@
+/* TextField-without-border-radius fieldset {
+  border-radius: 0;
+} */
+
+/* disable input incrementers in input type="number" */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* OTP input box */
+.otp-input-box {
+  display: flex;
+  flex: 1;
+  height: 3rem;
+  border-bottom: 1px solid #000;
+  background: transparent;
+}
+.otp-input-box:focus {
+  outline: none;
+  border-bottom: 2px solid #0e72e8;
+}
