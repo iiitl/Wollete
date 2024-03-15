@@ -21,10 +21,19 @@ const cvv_format = (value) => {
   return value.replace(/[^0-9]/g, '').substr(0, 3)
 }
 
+function camelCase(str) {
+  // Using replace method with regEx
+  return str
+    .replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+      return index == 0 ? word.toLowerCase() : word.toUpperCase()
+    })
+    .replace(/\s+/g, '')
+}
 const formatters = {
   cc_format,
   expiry_format,
   cvv_format,
+  camelCase,
 }
 
 export default formatters

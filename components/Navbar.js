@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+
+import formatters from '@/utils/format'
 
 import Login from './buttons/Login'
 import { navbarContent } from './Content'
@@ -20,6 +22,7 @@ export default function Navbar() {
   const [list2, setList2] = useState(0)
   const [list3, setList3] = useState(0)
 
+  const wrapperRef = useRef(null)
   const f1 = (id) => {
     console.log(id)
     if (id === 1) {
@@ -42,21 +45,48 @@ export default function Navbar() {
       setList0(false)
       setList1(false)
       setList2(false)
+    } else if (id === 0) {
+      setList3(false)
+      setList0(false)
+      setList1(false)
+      setList2(false)
     }
   }
 
+  useEffect(() => {
+    /**
+     * Alert if clicked on outside of element
+     */
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        f1(0)
+      }
+    }
+    // Bind the event listener
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [wrapperRef, f1])
+
   return (
     <>
-      <div className="container-style items-center justify-center hidden md:!flex mt-10 ">
+      <div
+        ref={wrapperRef}
+        className="container-style items-center justify-center hidden md:!flex mt-10 "
+      >
         <nav className="flex justify-between w-full text-header-mobile-sb transition-all">
           <section className="flex justify-between shrink-0">
-            <Image
-              src="/png/logo.png"
-              alt="Picture of the author"
-              width={180}
-              height={500}
-              className="lg:w-[180px] lg:h-[57px] w-[140px] h-[60px]"
-            />
+            <Link href="/">
+              <Image
+                src="/png/logo.png"
+                alt="Picture of the author"
+                width={180}
+                height={500}
+                className="lg:w-[180px] lg:h-[57px] w-[140px] h-[60px]"
+              />
+            </Link>
             {/* <Image src="/png/logo.png" alt="Picture of the author" width={100} height={100} className='hidden md:block lg:hidden'/> */}
           </section>
           <section className="ld:px-6 md:px-2">
@@ -106,7 +136,7 @@ export default function Navbar() {
                           <>
                             <div className="group bg-[#FFFFFF] hover:bg-[#EBF4FF] rounded-[10px] text-header-mobile-sb p-[16px] cursor-pointer group">
                               <Link
-                                href={nav.toLowerCase()}
+                                href={`/${nav.toLowerCase()}`}
                                 style={{ textDecoration: 'none' }}
                                 className={`text-[black] group-hover:text-[#0E72E8]`}
                               >
@@ -127,7 +157,11 @@ export default function Navbar() {
                           <>
                             <div className="bg-[#FFFFFF] group hover:bg-[#EBF4FF] rounded-[10px] text-header-mobile-sb p-[16px] cursor-pointer">
                               <Link
-                                href={nav.toLowerCase().replace(/ /g, '')}
+                                href={
+                                  nav == 'Third parties'
+                                    ? `/thirdParties`
+                                    : `/${nav.toLowerCase().replace(/ /g, '')}`
+                                }
                                 style={{ textDecoration: 'none' }}
                                 className={`text-[black] group-hover:text-[#0E72E8]`}
                               >
@@ -140,14 +174,20 @@ export default function Navbar() {
                     </div>
                     <div
                       className={`absolute sidebar top-[135px] bg-[#FFFFFF] rounded-[10px] p-[8px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.15)] ${
-                        list2 && nav == 'Developers' ? 'block' : 'hidden'
+                        list2 && nav == 'Stores' ? 'block' : 'hidden'
                       } slide-top`}
                     >
                       {developerList.map((nav, id) => {
                         return (
                           <>
                             <div className="bg-[#FFFFFF] hover:bg-[#EBF4FF] rounded-[10px] text-header-mobile-sb p-[16px] cursor-pointer">
-                              {nav}
+                              <Link
+                                href={`/${formatters.camelCase(nav)}`}
+                                style={{ textDecoration: 'none' }}
+                                className={`text-[black] group-hover:text-[#0E72E8]`}
+                              >
+                                {nav}
+                              </Link>
                             </div>
                           </>
                         )

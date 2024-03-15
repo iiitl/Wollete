@@ -6,20 +6,24 @@ Wollete is a Next.js project designed to facilitate secure and anonymous digital
 
 To get started with Wollete, follow these simple steps:
 
-1. **Install Dependencies**: 
+1. **Install Dependencies**:
    ```bash
    npm install
    ```
-   
-2. **Run the Development Server**: 
+2. **Run the Development Server**:
+
    ```bash
    npm run dev
    ```
+
    Or if you prefer using `yarn`:
+
    ```bash
    yarn dev
    ```
+
    Or with `pnpm`:
+
    ```bash
    pnpm dev
    ```
@@ -43,3 +47,21 @@ If you encounter any issues while using Wollete or have suggestions for improvem
 ---
 
 Thank you for choosing Wollete! We hope it serves your needs effectively and simplifies your digital receipt management experience.
+
+## Pages
+
+- Merchants ("/merchants")
+- Consumers
+  - Benefits ("/benefits")
+- Partners
+  - POS Providers ("/posproviders")
+  - Third parties ("/thirdParties")
+- Stores
+  - Clothing Store ("/clothingStore")
+  - Electronics Retailer ("/electrinicsRetailer")
+  - Grocery Chain ("/groceryChain")
+- Resources
+  - News ("/news")
+  - About us ("/aboutus")
+  - Contact us ("/contactus")
+- More News ("/newsmore") this will not be on navbar but in news page

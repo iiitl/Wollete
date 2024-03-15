@@ -39,11 +39,11 @@ const goodPointsContent = [
   },
 ]
 
-const navbarContent = ['Merchants', 'Consumers', 'Partners', 'Developers', 'Resources']
+const navbarContent = ['Merchants', 'Consumers', 'Partners', 'Stores', 'Resources']
 
-const consumerList = ['Benefits', 'Coverage']
+const consumerList = ['Benefits'] //, 'Coverage'
 const partnersList = ['POS Providers', 'Third parties']
-const developerList = ['Console', 'Support', 'Help center', 'Status page', 'API reference']
+const developerList = ['Clothing Store', 'Electronics Retailer', 'Grocery Chain'] //'Console', 'Support','Help center', 'Status page', 'API reference'
 const resourcesList = ['News', 'About us', 'Contact us']
 
 export {
