@@ -2,16 +2,16 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-footer container-style flex flex-col pt-48 sm:pt-40 md:pt-96 pb-6">
-      <div className="">
-        <div className="">
+    <footer className="bg-footer container-style flex flex-col pt-48 sm:pt-40 md:pt-96 pb-6 ">
+      <div className="flex bg-pink-600">
+        <div className="bg-blue-600 w-1/4">
           <div>
             <img src="/png/FooterLogo.png" className="w-min" />
           </div>
-          <div className="text-header-mobile-medium text-[#404040] mt-5">
+          <div className="text-header-mobile-medium text-[#404040] mt-5 w-64 ">
             Revolutionizing Transactions with Digital Receipts
           </div>
-          <div className="">
+          <div className="flex">
             <a href="#">
               <img src="/svg/SocialMedia/twitter.svg" className="hover:scale-125 transition-all" />
             </a>
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="">
+        <div className="flex">
           <div className="">
             <Link
               href="/"
@@ -78,7 +78,7 @@ export default function Footer() {
               <div className="text-footer">Third Parties</div>
             </Link>
           </div>
-          <div className="">
+          <div className="flex ">
             <div className="">
               <Link
                 href="/"
