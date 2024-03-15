@@ -1,7 +1,17 @@
-import Navbar from '@/components/Navbar'
-import ImageWithButton from '@/components/ImageWithButton'
+import { useEffect } from 'react';
+import Navbar from '@/components/Navbar';
+import ImageWithButton from '@/components/ImageWithButton';
 
 export default function NotFound() {
+  useEffect(() => {
+    // Add class to body to hide overflow when component mounts
+    document.body.classList.add('noscroll');
+    // Remove class from body to restore overflow when component unmounts
+    return () => {
+      document.body.classList.remove('noscroll');
+    };
+  }, []);
+
   return (
     <div className="background-styling">
       <Navbar />
@@ -14,7 +24,6 @@ export default function NotFound() {
             redirect="/"
             buttonTitle="Go to homepage"
           />
-
         </div>
       </section>
     </div>

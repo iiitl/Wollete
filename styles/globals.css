@@ -11,6 +11,11 @@
   @apply text-[#131313];
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
+
 .text-dark-gray {
   @apply text-[#404040];
 }
