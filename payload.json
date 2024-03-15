@@ -1,0 +1,158 @@
+{
+  "account": {
+    "billingInformation": [
+      {
+        "alias": "Default",
+        "billingAddress": {
+          "administrativeAreaId": "GB-BERKSHIRE",
+          "countryId": "United Kingdom",
+          "firstLine": "4 Barford Drive",
+          "secondLine": "",
+          "geoLocation": {
+            "latitude": {
+              "degrees": 51,
+              "minutes": 24,
+              "seconds": 31.61,
+              "direction": "N",
+              "decimalDegrees": 51.40878055555555
+            },
+            "longitude": {
+              "degrees": 0,
+              "minutes": 43,
+              "seconds": 39.03,
+              "direction": "W",
+              "decimalDegrees": -0.7275083333333333
+            },
+            "abbreviation": {
+              "lat": 51.40878055555555,
+              "lon": -0.7275083333333333
+            }
+          },
+          "postCode": "RG40 5AR",
+          "townId": "GB-BERKSHIRE-WOKINGHAM"
+        },
+        "billingDayOfMonth": 1,
+        "card": {
+          "expiryMonth": "DECEMBER",
+          "expiryYear": "24",
+          "name": "Prince Singh",
+          "pan": "4444444444444444",
+          "type": "visa"
+        },
+        "primary": true
+      }
+    ],
+    "email": {
+      "value": "prince.singh.iiitl@gmail.com"
+    },
+    "logo": null,
+    "telephone": {
+      "countryCode": "+91",
+      "phoneNumber": "31483294341",
+      "type": "MOBILE"
+    }
+  },
+  "address": {
+    "administrativeAreaId": "GB-BERKSHIRE",
+    "countryId": "GB",
+    "firstLine": "Whitton Rd",
+    "secondLine": "Winkfield Row",
+    "geoLocation": {
+      "latitude": {
+        "degrees": 51,
+        "minutes": 24,
+        "seconds": 31.61,
+        "direction": "N",
+        "decimalDegrees": 51.40878055555555
+      },
+      "longitude": {
+        "degrees": 0,
+        "minutes": 43,
+        "seconds": 39.03,
+        "direction": "W",
+        "decimalDegrees": -0.7275083333333333
+      },
+      "abbreviation": {
+        "lat": 51.40878055555555,
+        "lon": -0.7275083333333333
+      }
+    },
+    "postCode": "RG12 9TZ",
+    "townId": "GB-BERKSHIRE-WOKINGHAM"
+  },
+  "administrator": {
+    "account": {
+      "email": {
+        "value": "prince.singh.iiitl@gmail.com"
+      },
+      "password": {
+        "value": "orijeoroiqroij"
+      },
+      "picture": null,
+      "telephone": {
+        "countryCode": "+91",
+        "phoneNumber": "9139049324",
+        "type": "MOBILE"
+      },
+      "username": {
+        "value": "tsarprince"
+      }
+    },
+    "address": {
+      "administrativeAreaId": "GB-BERKSHIRE",
+      "countryId": "GB",
+      "firstLine": "4 Barford Drive",
+      "secondLine": "",
+      "geoLocation": {
+        "latitude": {
+          "degrees": 51,
+          "minutes": 24,
+          "seconds": 31.61,
+          "direction": "N",
+          "decimalDegrees": 51.40878055555555
+        },
+        "longitude": {
+          "degrees": 0,
+          "minutes": 43,
+          "seconds": 39.03,
+          "direction": "W",
+          "decimalDegrees": -0.7275083333333333
+        },
+        "abbreviation": {
+          "lat": 51.40878055555555,
+          "lon": -0.7275083333333333
+        }
+      },
+      "postCode": "RG40 5AR",
+      "townId": "GB-BERKSHIRE-WOKINGHAM"
+    },
+    "birthDate": "2003-06-28",
+    "firstName": "Prince",
+    "gender": "Male",
+    "lastName": "Singh",
+    "otp": {
+      "value": "055678"
+    },
+    "termsAgreement": {
+      "termsId": "B60013BE-649F-4E97-A4F9-A24DAF6851D8"
+    },
+    "verificationChannelSource": {
+      "channel": {
+        "value": "marvelousprince012233@gmail.com"
+      },
+      "type": "EMAIL"
+    }
+  },
+  "classifications": [
+    {
+      "value": "Manufactuting"
+    },
+    {
+      "value": "Packaging"
+    }
+  ],
+  "companyNumber": "12313313",
+  "registeredName": "Company name",
+  "vatNumber": "11111111111",
+  "website": "https://www.google.com"
+}
