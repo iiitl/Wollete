@@ -62,13 +62,13 @@ export default function Navbar() {
         f1(0)
       }
     }
-
+    // Bind the event listener
     document.addEventListener('mousedown', handleClickOutside)
     return () => {
       // Unbind the event listener on clean up
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [wrapperRef, f1])
+  }, [wrapperRef])
 
   return (
     <>

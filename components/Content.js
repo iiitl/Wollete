@@ -44,6 +44,11 @@ const navbarContent = ['Merchants', 'Consumers', 'Partners', 'Stores', 'Resource
 const consumerList = ['Benefits'] //, 'Coverage'
 const partnersList = ['POS Providers', 'Third parties']
 const developerList = ['Clothing Store', 'Electronics Retailer', 'Grocery Chain'] //'Console', 'Support','Help center', 'Status page', 'API reference'
+// const navbarContent = ['Merchants', 'Consumers', 'Partners', 'Developers', 'Resources']
+
+// const consumerList = ['Benefits', 'Coverage']
+// const partnersList = ['POS Providers', 'Third parties']
+// const developerList = ['Console', 'Support', 'Help center', 'Status page', 'API reference']
 const resourcesList = ['News', 'About us', 'Contact us']
 
 export {
