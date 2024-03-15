@@ -16,11 +16,15 @@ export default function Index() {
       const absoluteDiv4 = document.getElementById('lines4')
       const bodyHeight = document.body.scrollHeight
       console.log(bodyHeight)
-      absoluteDiv.style.height = `${bodyHeight}px`
-      absoluteDiv1.style.height = `${bodyHeight}px`
-      absoluteDiv2.style.height = `${bodyHeight}px`
-      absoluteDiv3.style.height = `${bodyHeight}px`
-      absoluteDiv4.style.height = `${bodyHeight}px`
+      if (absoluteDiv && absoluteDiv1 && absoluteDiv2 && absoluteDiv3 && absoluteDiv4) {
+        const bodyHeight = document.body.scrollHeight
+        console.log(bodyHeight)
+        absoluteDiv.style.height = `${bodyHeight}px`
+        absoluteDiv1.style.height = `${bodyHeight}px`
+        absoluteDiv2.style.height = `${bodyHeight}px`
+        absoluteDiv3.style.height = `${bodyHeight}px`
+        absoluteDiv4.style.height = `${bodyHeight}px`
+      }
     }
     setTimeout(() => {
       adjustAbsoluteDivHeight()
