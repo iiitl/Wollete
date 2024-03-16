@@ -1,45 +1,34 @@
-# Wollete
-
-Wollete is a Next.js project designed to facilitate secure and anonymous digital receipt transmission for paperless transactions and billing among diverse entities. With a focus on privacy and convenience, Wollete aims to streamline the process of managing receipts in a digital environment.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-To get started with Wollete, follow these simple steps:
+First, run the development server:
 
-1. **Install Dependencies**: 
-   ```bash
-   npm install
-   ```
-   
-2. **Run the Development Server**: 
-   ```bash
-   npm run dev
-   ```
-   Or if you prefer using `yarn`:
-   ```bash
-   yarn dev
-   ```
-   Or with `pnpm`:
-   ```bash
-   pnpm dev
-   ```
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-3. **Start Contributing**: Once the development server is up and running, you're all set to start contributing to the project.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-4. **View the Result**: Open [http://localhost:3000](http://localhost:3000) in your preferred web browser to see the Wollete project in action.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-## Contribution Guidelines
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Contributions to Wollete are welcome and encouraged! To contribute, please follow these guidelines:
+## Learn More
 
-- Fork the repository and create a new branch for your contribution.
-- Ensure your code adheres to the project's coding standards and practices.
-- Submit a pull request detailing the changes you've made and explaining their purpose.
+To learn more about Next.js, take a look at the following resources:
 
-## Feedback and Support
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-If you encounter any issues while using Wollete or have suggestions for improvement, please don't hesitate to open an issue on the GitHub repository. Your feedback is invaluable in helping us enhance Wollete and make it even better.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-Thank you for choosing Wollete! We hope it serves your needs effectively and simplifies your digital receipt management experience.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
