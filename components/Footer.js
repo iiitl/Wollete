@@ -3,15 +3,15 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="bg-footer container-style flex flex-col pt-48 sm:pt-40 md:pt-96 pb-6">
-      <div className="">
-        <div className="">
+      <div className="flex flex-col md:flex-row gap-3">
+        <div className="basis-1/4 md:self-start md:pe-16 sm:self-center">
           <div>
             <img src="/png/FooterLogo.png" className="w-min" />
           </div>
           <div className="text-header-mobile-medium text-[#404040] mt-5">
             Revolutionizing Transactions with Digital Receipts
           </div>
-          <div className="">
+          <div className="flex justify-center gap-12 mt-10 lg:flex-row md:justify-start md:flex-col md:items-center">
             <a href="#">
               <img src="/svg/SocialMedia/twitter.svg" className="hover:scale-125 transition-all" />
             </a>
@@ -26,8 +26,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="">
-          <div className="">
+        <div className="flex basis-3/4 mt-10 md:mt-0 z-30">
+          <div className="flex flex-col ps-1 basis-1/2  md:items-start sm:basis-1/3  sm:items-center  sm:ms-0 ">
             <Link
               href="/"
               style={{ color: 'inherit', textDecoration: 'inherit' }}
@@ -78,8 +78,8 @@ export default function Footer() {
               <div className="text-footer">Third Parties</div>
             </Link>
           </div>
-          <div className="">
-            <div className="">
+          <div className="flex flex-col ps-1 basis-1/2 sm:basis-2/3  sm:flex-row  sm:ms-0">
+            <div className="flex flex-col basis-1/2 md:items-start md:ms-3 sm:items-center">
               <Link
                 href="/"
                 style={{ color: 'inherit', textDecoration: 'inherit' }}
@@ -123,7 +123,7 @@ export default function Footer() {
                 <div className="text-footer">API Reference</div>
               </Link>
             </div>
-            <div className="">
+            <div className="flex flex-col basis-1/2 md:items-start md:ms-10 sm:items-center">
               <Link
                 href="/"
                 style={{ color: 'inherit', textDecoration: 'inherit' }}
