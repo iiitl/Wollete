@@ -1,12 +1,25 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 
 import Footer from '@/components/Footer'
 import HorizontalCarousel from '@/components/HorizontalCarousel'
 import Image_DescriptionBtn from '@/components/Image_DescriptionBtn'
 import Navbar from '@/components/Navbar'
+export async function getStaticProps(context) {
+  return {
+    props: {
+      // You can get the messages from anywhere you like. The recommended
+      // pattern is to put them in JSON files separated by locale and read
+      // the desired one based on the `locale` received from Next.js.
+      messages: (await import(`../messages/${context.locale}.json`)).default,
+    },
+  }
+}
 
 export default function Index() {
+  const t = useTranslations('HomePage')
   useEffect(() => {
     function adjustAbsoluteDivHeight() {
       const absoluteDiv = document.getElementById('lines')
@@ -39,7 +52,7 @@ export default function Index() {
       <section className="mt-48 flex flex-col items-center">
         <Image_DescriptionBtn
           type="hero"
-          title="The smart digital receipt platform"
+          title={t('title')} //"The smart digital receipt platform"
           description="Lorem ipsum dolor sit amet consectetur. A facilisi luctus semper netus volutpat integer scelerisque sit velit. "
           image="/png/Hero.png"
         />

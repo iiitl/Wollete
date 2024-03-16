@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 import Login from './buttons/Login'
@@ -7,18 +8,22 @@ import { navbarContent } from './Content'
 import { consumerList } from './Content'
 import { partnersList } from './Content'
 import { developerList } from './Content'
-import { resourcesList } from './Content'
+import { language, resourcesList } from './Content'
 export default function Navbar() {
+  const router = useRouter()
   const [toggle, setToggle] = useState(false)
   const [toggle1, setToggle1] = useState(false)
   const [toggle2, setToggle2] = useState(false)
   const [toggle3, setToggle3] = useState(false)
   const [toggle4, setToggle4] = useState(false)
-
+  const [toggle5, setToggle5] = useState(false)
   const [list0, setList0] = useState(0)
   const [list1, setList1] = useState(0)
   const [list2, setList2] = useState(0)
   const [list3, setList3] = useState(0)
+  const [list4, setList4] = useState(0)
+
+  const [currentLang, setcurrentLang] = useState(router.locale)
 
   const f1 = (id) => {
     console.log(id)
@@ -27,21 +32,31 @@ export default function Navbar() {
       setList1(false)
       setList2(false)
       setList3(false)
+      setList4(false)
     } else if (id === 2) {
       setList1(!list1)
       setList0(false)
       setList2(false)
       setList3(false)
+      setList4(false)
     } else if (id === 3) {
       setList2(!list2)
       setList0(false)
       setList1(false)
       setList3(false)
+      setList4(false)
     } else if (id === 4) {
       setList3(!list3)
       setList0(false)
       setList1(false)
       setList2(false)
+      setList4(false)
+    } else if (id === 5) {
+      setList4(!list4)
+      setList0(false)
+      setList1(false)
+      setList2(false)
+      setList3(false)
     }
   }
 
@@ -180,31 +195,70 @@ export default function Navbar() {
             </ul>
           </section>
 
-          <section className="group flex lg:gap-2 justify-center items-center ">
-            <div className="flex justify-center items-center hover:text-[#0E72E8]">
-              <Link
-                href="#"
-                style={{ textDecoration: 'none' }}
-                className="text-[black] group-hover:text-[#0E72E8]"
+          <section className=" flex lg:gap-2 justify-center items-center ">
+            <ul className="flex justify-between list-none items-center lg:px-[5px] md:px-[2px] lg:gap-6 md:gap-2 mt-3">
+              <li
+              // className="flex justify-center "
+              // // key={id}
+              // onClick={() => {
+              //   f1(5)
+              // }}
               >
-                En
-              </Link>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                className="lg:ml-2"
-              >
-                <path
-                  d="M3 6L7.50667 11L12 6"
-                  stroke="#131313"
-                  strokeWidth="1.5"
-                  className="group-hover:stroke-[#0E72E8]"
-                />
-              </svg>
-            </div>
+                <div
+                  className="flex justify-center "
+                  // key={id}
+                  onClick={() => {
+                    f1(5)
+                  }}
+                >
+                  <Link
+                    href="#"
+                    style={{ textDecoration: 'none' }}
+                    className="text-[black] hover:text-[#0E72E8] group flex"
+                  >
+                    {currentLang}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      className="lg:ml-2"
+                    >
+                      <path
+                        d="M3 6L7.50667 11L12 6"
+                        stroke="#131313"
+                        strokeWidth="1.5"
+                        className="group-hover:stroke-[#0E72E8]"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+
+                <div
+                  className={`absolute sidebar top-[135px] bg-[#FFFFFF] rounded-[10px] p-[8px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.15)] ${
+                    list4 ? 'block' : 'hidden'
+                  } slide-top`}
+                >
+                  {language.map((nav, id) => {
+                    return (
+                      <>
+                        <div className="group bg-[#FFFFFF] hover:bg-[#EBF4FF] rounded-[10px] text-header-mobile-sb p-[16px] cursor-pointer group">
+                          <Link
+                            href={`/${nav.toLowerCase()}`}
+                            style={{ textDecoration: 'none' }}
+                            className={`text-[black] group-hover:text-[#0E72E8]`}
+                            // onClick = {setcurrentLang(nav)}
+                          >
+                            {nav}
+                          </Link>
+                        </div>
+                      </>
+                    )
+                  })}
+                </div>
+              </li>
+            </ul>
             <div className="flex shrink-0">
               <Login />
             </div>
@@ -216,8 +270,11 @@ export default function Navbar() {
         <nav className="flex items-center justify-between w-full">
           <Image src="/png/logo.png" alt="Picture of the author" width={120} height={120} />
           <div className="flex items-center">
-            <div className="group w-[50px] flex justify-center items-center mr-[3px] text-[#131313] font-semibold leading-[150%] text-[17px] hover:text-[#0E72E8] transition-all">
-              En
+            <div
+              onClick={() => setToggle5(!toggle5)}
+              className="group w-[50px] flex justify-center items-center mr-[3px] text-[#131313] font-semibold leading-[150%] text-[17px] hover:text-[#0E72E8] transition-all"
+            >
+              {currentLang}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -233,6 +290,30 @@ export default function Navbar() {
                   className="group-hover:stroke-[#0E72E8]"
                 />
               </svg>
+              <div
+                className={`absolute sidebar top-[135px] bg-[#FFFFFF] rounded-[10px] p-[8px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.15)] ${
+                  toggle5 ? 'block' : 'hidden'
+                } slide-top`}
+              >
+                {language.map((nav, id) => {
+                  return (
+                    <>
+                      <div className="group bg-[#FFFFFF] hover:bg-[#EBF4FF] rounded-[10px] text-header-mobile-sb p-[16px] cursor-pointer group">
+                        <Link
+                          // onClick={}
+                          href={`/${nav.toLowerCase()}`}
+                          style={{ textDecoration: 'none' }}
+                          className={`text-[black] group-hover:text-[#0E72E8]`}
+                          replace
+                          // onClick = {setcurrentLang(nav)}
+                        >
+                          {nav}
+                        </Link>
+                      </div>
+                    </>
+                  )
+                })}
+              </div>
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

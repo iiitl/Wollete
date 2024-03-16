@@ -45,11 +45,13 @@ const consumerList = ['Benefits', 'Coverage']
 const partnersList = ['POS Providers', 'Third parties']
 const developerList = ['Console', 'Support', 'Help center', 'Status page', 'API reference']
 const resourcesList = ['News', 'About us', 'Contact us']
+const language = ['en-US', 'hi', 'es']
 
 export {
   consumerList,
   developerList,
   goodPointsContent,
+  language,
   navbarContent,
   partnersList,
   resourcesList,
